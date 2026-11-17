@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(VideoProcessor LANGUAGES CXX)
+find_package(OpenCV REQUIRED)
+add_executable(VideoProcessor main.cpp)
+target_include_directories(VideoProcessor PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(VideoProcessor PRIVATE ${OpenCV_LIBS})
+target_compile_features(VideoProcessor PRIVATE cxx_std_20)

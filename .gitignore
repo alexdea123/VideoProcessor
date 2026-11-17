@@ -1,0 +1,20 @@
+# CMake build directories
+/build/
+/cmake-build-*/
+
+# Compiler output
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# Editor and operating system files
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/ipch/
